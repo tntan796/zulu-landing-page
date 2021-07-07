@@ -438,4 +438,38 @@ body {
   transform: translate(50%, -50%);
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.footer-heading {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.footer-link {
+  color: #272e35;
+  font-size: 14px;
+  display: inline-block;
+}
+.footer-link-item {
+  margin-bottom: 30px;
+}
+.footer-description {
+  margin: 40px 0 50px;
+  max-width: 250px;
+}
+.footer-social {
+  display: inline-block;
+}
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  align-items: center;
+  justify-self: center;
+  padding: 5px;
+  color: white;
+}
+
 /*# sourceMappingURL=index.css.map */
