@@ -1,0 +1,14 @@
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 160px 0;
+
+    &-content {
+        margin-right: 110px;
+    }
+
+    &-description {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}

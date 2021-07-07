@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: $gray-dark;
+    line-height: 1;
+    background: white;
+}
+
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    font-size: 16px;
+    color: $gray-dark;
+    padding: 20px 45px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    line-height: normal;
+    font-weight: 500;
+
+    &--primary {
+        color: white;
+        background-color: $primary-color;
+    }
+
+    &--outline {
+        border: 1px solid $gray-blur;
+    }
+}
+
+.container {
+    max-width: 1170px; //width 1140px + padding
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.text {
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.block {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 85px;
+
+    &-caption {
+        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+        padding: 0 10px;
+        font-weight: bold;
+        color: $gray-dark;
+
+        &::before, &::after{
+            height: 2px;
+            width: 30px;
+            background: $primary-color;
+            content: "";
+            position: absolute;
+            top: 50%;
+        }
+
+        &::before {
+            left: 0;
+            transform: translateX(-100%) translateY(-50%);
+        }
+
+        &::after {
+            right: 0;
+            transform: translateX(100%) translateY(-50%);
+        }
+    }
+
+    &-caption--left {
+        padding-left: 35px ;
+        margin-bottom: 30px;
+
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            transform: none;
+        }
+    }
+
+    &-heading {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1.4;
+    }
+
+    span {
+        display: block;
+    }
+}
