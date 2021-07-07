@@ -254,6 +254,9 @@ body {
   margin-bottom: 30px;
 }
 
+.plan {
+  margin-bottom: 160px;
+}
 .plan-list {
   display: flex;
   justify-content: space-between;
@@ -338,6 +341,70 @@ body {
   margin: auto auto 0;
   display: block;
   width: max-content;
+}
+
+.client {
+  margin-top: 160px;
+  padding: 100px;
+}
+.client-list {
+  display: flex;
+}
+.client-item {
+  flex: 1;
+  padding: 45px 25px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+}
+.client-item img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.client-item:hover {
+  border: transparent;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.client-name {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.client-position {
+  color: #9ba9bc;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid gray;
+}
+.client-item:not(:first-child) {
+  margin-left: 70px;
+}
+.client-content {
+  color: #9ba9bc;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  margin-bottom: 30px;
+}
+.client-rate {
+  color: #ffcb46;
+}
+.client-rate i {
+  margin: 0 5px;
+  color: #ffcb46;
 }
 
 /*# sourceMappingURL=index.css.map */
