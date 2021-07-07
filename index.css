@@ -407,4 +407,35 @@ body {
   color: #ffcb46;
 }
 
+.started {
+  max-width: 900px;
+  margin: 100px auto 50px;
+  border-radius: 20px;
+  background-color: #fbfbfb;
+  padding: 60px 30px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.started-heading {
+  font-size: 40px;
+}
+.started-description {
+  max-width: 245px;
+  margin-bottom: 50px;
+}
+.started-comment {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+.started-smile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
 /*# sourceMappingURL=index.css.map */
