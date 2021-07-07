@@ -1,0 +1,41 @@
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+
+    &-heading {
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    &-link {
+        color: $gray-dark;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    &-link-item {
+        margin-bottom: 30px;
+    }
+
+    &-description {
+        margin: 40px 0 50px;
+        max-width: 250px;
+    }
+
+    &-social {
+        display: inline-block;
+
+        &-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            align-items: center;
+            justify-self: center;
+            padding: 5px;
+            color: white;
+        }
+
+        
+    }
+}
