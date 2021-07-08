@@ -32,3 +32,45 @@
         margin-left: auto;
     }
 }
+
+@media screen and (max-width: 1279px) {
+    .header-logo {
+        margin-right: 0px;
+    }
+
+    .header-menu {
+        margin: 0 auto;
+    }
+
+    .header-auth {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header-auth {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button {
+        padding: 10px 20px;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .header-auth {
+        margin-left: auto;
+    }
+
+    .header-logo-image {
+        max-width: 90px;
+    }
+}
