@@ -43,3 +43,52 @@
         }
     }
 }
+
+@media screen and (max-width: 1279px) {
+    .banner {
+        &-heading {
+            font-size: 45px;
+        }
+
+        &-link {
+            .button:first-child {
+                margin-right: 10px;
+            }
+
+            .button {
+                padding: 15px 20px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .banner {
+        flex-direction: column;
+
+        & > * {
+            width: 100%;
+        }
+
+        &-image {
+            transform: none;
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        padding-top: 30px;
+
+        &-heading {
+            font-size: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+
+            span {
+                display: unset;
+            }
+        }
+    }
+}
