@@ -1,4 +1,5 @@
 .footer {
+    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-column-gap: 20px;
@@ -23,6 +24,7 @@
         max-width: 250px;
     }
 
+    
     &-social {
         display: inline-block;
 
@@ -34,8 +36,19 @@
             justify-self: center;
             padding: 5px;
             color: white;
+            margin-right: 5px;
         }
+    }
 
-        
+    .bg-google {
+        background-color: $bg-google;
+    }
+    
+    .bg-twitter {
+        background-color: $bg-twitter;
+    }
+    
+    .bg-instagram {
+        background-color: $bg-instagram;
     }
 }

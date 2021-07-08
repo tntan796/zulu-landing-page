@@ -116,6 +116,18 @@ body {
   display: block;
 }
 
+.bg-google {
+  background-color: #ff7979;
+}
+
+.bg-twitter {
+  background-color: #79afff;
+}
+
+.bg-instagram {
+  background-color: #ffb979;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -439,6 +451,7 @@ body {
 }
 
 .footer {
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
@@ -470,6 +483,16 @@ body {
   justify-self: center;
   padding: 5px;
   color: white;
+  margin-right: 5px;
+}
+.footer .bg-google {
+  background-color: #ff7979;
+}
+.footer .bg-twitter {
+  background-color: #79afff;
+}
+.footer .bg-instagram {
+  background-color: #ffb979;
 }
 
 /*# sourceMappingURL=index.css.map */
