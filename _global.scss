@@ -140,3 +140,17 @@ body {
 .bg-instagram {
     background-color: $bg-instagram;
 }
+
+@media screen and (max-width: 767px) {
+    .block{
+        margin-bottom: 30px;
+
+        &-heading {
+            font-size: 30px;
+        }
+
+        &-caption {
+            margin-bottom: 30px;
+        }
+    }
+}

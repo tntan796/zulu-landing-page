@@ -129,6 +129,17 @@ body {
   background-color: #ffb979;
 }
 
+@media screen and (max-width: 767px) {
+  .block {
+    margin-bottom: 30px;
+  }
+  .block-heading {
+    font-size: 30px;
+  }
+  .block-caption {
+    margin-bottom: 30px;
+  }
+}
 .header {
   display: flex;
   align-items: center;
@@ -328,6 +339,30 @@ body {
   width: 100%;
   max-width: 100%;
 }
+@media screen and (max-width: 1023px) {
+  .work-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 50%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    grid-template-columns: unset;
+  }
+  .work-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .work-list > * {
+    scroll-snap-align: start;
+    width: 100%;
+  }
+}
 
 .intro {
   display: flex;
@@ -340,6 +375,23 @@ body {
 .intro-description {
   margin-top: 40px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1023px) {
+  .intro {
+    padding: 20px;
+  }
+  .intro-content {
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .intro {
+    display: block;
+    text-align: center;
+  }
+  .intro-image {
+    margin-top: 30px;
+  }
 }
 
 .plan {
@@ -430,6 +482,30 @@ body {
   display: block;
   width: max-content;
 }
+@media screen and (max-width: 1023px) {
+  .plan-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 60%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    grid-template-columns: unset;
+  }
+  .plan-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .plan-list > * {
+    scroll-snap-align: start;
+    width: 100%;
+  }
+}
 
 .client {
   margin-top: 160px;
@@ -493,6 +569,30 @@ body {
 .client-rate i {
   margin: 0 5px;
   color: #ffcb46;
+}
+@media screen and (max-width: 1023px) {
+  .client-list {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 60%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    grid-template-columns: unset;
+  }
+  .client-list::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .client-list > * {
+    scroll-snap-align: start;
+    width: 100%;
+  }
 }
 
 .started {
